@@ -31,7 +31,7 @@
                         <threadCount>${base.threadCount}</threadCount>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/test.resources/cucucmberSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/cucucmberSuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>

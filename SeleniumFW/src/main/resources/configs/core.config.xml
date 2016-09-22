@@ -8,7 +8,7 @@
     <!-- http timeout-->
     <TIMINGS_ASYNC_RESPONSE_WAIT>60</TIMINGS_ASYNC_RESPONSE_WAIT>
 
-    <WEBDRIVER_CHROME_DRIVER>C:\AT\chromedriver.exe</WEBDRIVER_CHROME_DRIVER>
+    <WEBDRIVER_CHROME_DRIVER>chromedriver</WEBDRIVER_CHROME_DRIVER>
 
     <!--http proxy server-->
     <PROXY_SERVER_HOST>localhost</PROXY_SERVER_HOST>
