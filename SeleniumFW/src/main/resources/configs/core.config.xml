@@ -1,0 +1,26 @@
+<DRIVERS_CONFIG>
+    <!--FIREFOX, CHROME or IE-->
+    <ENGINE>CHROME</ENGINE>
+    <!--firefox use extension 1 - use. 0 - don't.-->
+    <ADD_FIREFOX_EXTENSION>1</ADD_FIREFOX_EXTENSION>
+    <!--core timeout-->
+    <TIMINGS_IMPLICIT_WAIT>5</TIMINGS_IMPLICIT_WAIT>
+    <!-- http timeout-->
+    <TIMINGS_ASYNC_RESPONSE_WAIT>60</TIMINGS_ASYNC_RESPONSE_WAIT>
+
+    <WEBDRIVER_CHROME_DRIVER>C:\AT\chromedriver.exe</WEBDRIVER_CHROME_DRIVER>
+
+    <!--http proxy server-->
+    <PROXY_SERVER_HOST>localhost</PROXY_SERVER_HOST>
+    <!--port range for proxy-->
+    <MIN_PORT_NUMBER>1024</MIN_PORT_NUMBER>
+    <MAX_PORT_NUMBER>2048</MAX_PORT_NUMBER>
+
+    <!--browser max size 1 - max. 0- default -->
+    <MAXMIZED_WINDOW>1</MAXMIZED_WINDOW>
+
+    <!--screenshots 1 - do them. 0- don't do them -->
+    <FLAG_NEED_MAKE_SCREENSHOT>1</FLAG_NEED_MAKE_SCREENSHOT>
+    <!--screenshot time freq. To fast screenshots can lead to driver errors.-->
+    <SCREENSHOTS_FREQUENCY>5</SCREENSHOTS_FREQUENCY>
+</DRIVERS_CONFIG>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test runner" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+        <listener class-name="org.testng.reporters.jq.Main"/>
+        <listener class-name="ru.sbt.autotest.TestListener"/>
+    </listeners>
+
+    <test name="Package with subpackages">
+        <classes>
+            <class name="cucumber.CucumberTest"/>
+        </classes>
+    </test>
+</suite>

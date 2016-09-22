@@ -1,0 +1,39 @@
+<testData>
+    <logins>
+        <login role="PL" login="lu_trR3" password="w123456"/>
+        <login role="CM" login="clientmanagerR3" password="w123456"/>
+        <login role="AN" login="analystR3" password="w123456"/>
+        <login role="DISP" login="dispatcherr3" password="w123456"/>
+        <login role="AR" login="underwriterR3" password="w123456"/>
+        <login role="SEC_KKR" login="secretarymrcr3" password="w123456"/>
+        <login role="RM" login="riskmanagerr3" password="w123456"/>
+    </logins>
+    <InternalRating>1</InternalRating>
+    <IssuedBondValue>1000</IssuedBondValue>
+    <MarketCapitalization>1000</MarketCapitalization>
+    <ShareholdersEquity>1000</ShareholdersEquity>
+    <Counterparties>
+        <Counterparty>
+            <CounterpartyName>testCN</CounterpartyName>
+            <CounterpartyRusName>ТестКН</CounterpartyRusName>
+            <INN>1111</INN>
+            <SWIFT>1111</SWIFT>
+            <LicenseNumber>1111</LicenseNumber>
+            <City>Test</City>
+        </Counterparty>
+        <Counterparty>
+            <CounterpartyName>Rosbank</CounterpartyName>
+            <CounterpartyRusName></CounterpartyRusName>
+            <INN>7730060164</INN>
+            <SWIFT></SWIFT>
+            <LicenseNumber>2272</LicenseNumber>
+        </Counterparty>
+        <Counterparty>
+            <CounterpartyName>Russian Agricultural Bank OJSC</CounterpartyName>
+            <CounterpartyRusName></CounterpartyRusName>
+            <INN>7725114488</INN>
+            <SWIFT></SWIFT>
+            <LicenseNumber>3349</LicenseNumber>
+        </Counterparty>
+    </Counterparties>
+</testData>

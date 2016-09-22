@@ -1,0 +1,36 @@
+<FRAMEWORK>
+    <!--300 seconds - time for long integration wait-->
+    <WAIT_INTEGRATION_TIMEOUT_MS>300000</WAIT_INTEGRATION_TIMEOUT_MS>
+    <!--10 секунд - JS timeout-->
+    <WAIT_JS_READY_STAT_MS>10000</WAIT_JS_READY_STAT_MS>
+    <!--default timeout-->
+    <DEFAULT_ELEMENT_WAIT_TIMEOUT_MS>10000</DEFAULT_ELEMENT_WAIT_TIMEOUT_MS>
+    <!--default visibility timeout-->
+    <DEFAULT_ELEMENT_VISIBILITY_TIMEOUT_MS>5000</DEFAULT_ELEMENT_VISIBILITY_TIMEOUT_MS>
+    <!-- StaleElementReferenceException timeout-->
+    <DEFAULT_StaleElementReferenceException_WAIT_MS>300000</DEFAULT_StaleElementReferenceException_WAIT_MS>
+    <!--selenium implicitly wait timeout -->
+    <DEFAULT_DRIVER_IMPLICITLY_WAIT_SEC>60</DEFAULT_DRIVER_IMPLICITLY_WAIT_SEC>
+    <!--script timeout -->
+    <DEFAULT_DRIVER_SCRIPT_TIMEOUT_SEC>300</DEFAULT_DRIVER_SCRIPT_TIMEOUT_SEC>
+    <!--database timeout -->
+    <DEFAULT_DATABASE_QUERY_WAIT_MS>60000</DEFAULT_DATABASE_QUERY_WAIT_MS>
+
+    <!-- Path to screenshots -->
+    <SCREENSHOT_PATH>target\screenshots</SCREENSHOT_PATH>
+
+    <!-- path to store downloads -->
+    <DOWNLOADS_PATH>\out\downloads</DOWNLOADS_PATH>
+
+    <!-- firefox files, which it doe'nt ask what to do with it. Instead FF will just save them silently -->
+    <dontAskSaveToFile>application/vnd.ms-word</dontAskSaveToFile>
+    <dontAskSaveToFile>application/vnd.oasis.opendocument.spreadsheet</dontAskSaveToFile>
+    <dontAskSaveToFile>application/vnd.ms-excel</dontAskSaveToFile>
+    <dontAskSaveToFile>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dontAskSaveToFile>
+    <dontAskSaveToFile>application/pdf</dontAskSaveToFile>
+    <dontAskSaveToFile>application/zip</dontAskSaveToFile>
+    <dontAskSaveToFile>application/x-rar-compressed</dontAskSaveToFile>
+    <dontAskSaveToFile>application/octet-stream</dontAskSaveToFile>
+
+    <UseProxy>false</UseProxy>
+</FRAMEWORK>

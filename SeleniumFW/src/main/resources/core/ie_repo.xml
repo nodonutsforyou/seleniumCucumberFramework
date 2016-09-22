@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+    <windows>
+        <driver id="internetexplorer">
+            <version id="2.40.0">
+                <bitrate sixtyfourbit="true">
+                    <filelocation>
+                        http://selenium-release.storage.googleapis.com/2.40/IEDriverServer_x64_2.40.0.zip
+                    </filelocation>
+                    <hash>7769f840dc566657efe0a1268ec24904</hash>
+                    <hashtype>MD5</hashtype>
+                </bitrate>
+                <bitrate thirtytwobit="true">
+                    <filelocation>
+                        http://selenium-release.storage.googleapis.com/2.40/IEDriverServer_Win32_2.40.0.zip
+                    </filelocation>
+                    <hash>90c495b4bcd5e86c0a2e5c5c4ac16369</hash>
+                    <hashtype>MD5</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+    </windows>
+
+    <linux>
+
+    </linux>
+
+    <osx>
+
+    </osx>
+</root>

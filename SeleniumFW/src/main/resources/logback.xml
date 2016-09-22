@@ -1,0 +1,54 @@
+<configuration>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %C [%X{threadName}]:[%X{testName}] [%level] - %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <appender name="fileSmall" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <discriminator>
+            <key>testName</key>
+            <defaultValue>Test</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="fileSmall-${testName}" class="ch.qos.logback.core.FileAppender">
+                <file>target/logs/output.${testName}.log</file>
+                <append>false</append>
+                <layout class="ch.qos.logback.classic.PatternLayout">
+                    <pattern>%d{HH:mm:ss.SSS} %C [%X{threadName}]:[%X{testName}] [%level] - %m%n</pattern>
+                </layout>
+                <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                    <level>INFO</level>
+                </filter>
+            </appender>
+        </sift>
+    </appender>
+
+    <appender name="fileBig" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <discriminator>
+            <key>testName</key>
+            <defaultValue>Test</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="fileBig-${testName}" class="ch.qos.logback.core.FileAppender">
+                <file>target/logs/output.${testName}.Debug.log</file>
+                <append>false</append>
+                <layout class="ch.qos.logback.classic.PatternLayout">
+                    <pattern>%d{HH:mm:ss.SSS} %C [%X{threadName}]:[%X{testName}] [%level] - %m%n</pattern>
+                </layout>
+            </appender>
+        </sift>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="console" />
+        <appender-ref ref="fileSmall" />
+        <appender-ref ref="fileBig" />
+    </root>
+</configuration>
